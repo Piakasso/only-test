@@ -6,11 +6,13 @@ import { data } from "./assets/data";
 
 const AppEl = styled.div`
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;
 const Wrapper = styled.div`
   position: relative;
   max-width: 1440px;
-
+  flex-grow: 1;
   height: 100%;
   margin: 0 auto;
   border-left: var(--primary-transparent) solid 1px;

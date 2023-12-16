@@ -15,7 +15,7 @@ import { SliderProps } from "../types";
 
 const SliderEl = styled.div`
   overflow: visible;
-  padding-top: 170px;
+  padding-top: 120px;
   padding-bottom: 30px;
   position: relative;
   height: 100%;

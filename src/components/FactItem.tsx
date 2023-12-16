@@ -14,6 +14,8 @@ const FactItemEl = styled.div`
   }
   p {
     font-size: var(--fs-md);
+    max-height: 150px;
+    overflow-y: scroll;
   }
   @media (max-width: 767px) {
     h2 {

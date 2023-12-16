@@ -13,7 +13,7 @@ import NavButton from "./NavButton";
 const FactsSliderEl = styled.div`
   flex-grow: 1;
   position: relative;
-  padding: 60px 0 100px 0;
+  padding: 60px 0 80px 0;
 `;
 
 const StyledSwiper = styled(Swiper)`

@@ -12,7 +12,7 @@ const Circle = styled.div`
   width: 540px;
   height: 540px;
   background-color: transparent;
-  border: 1px solid rgba(66, 86, 122, 0.4);
+  border: 1px solid rgba(66, 86, 122, 0.1);
   border-radius: 50%;
   z-index: 50;
 `;
