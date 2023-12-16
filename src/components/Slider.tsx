@@ -13,31 +13,24 @@ import Title from "./Title";
 import FactsSlider from "./FactsSlider";
 import { SliderProps } from "../types";
 
-const SliderEl = styled.div`
-  overflow: visible;
+const StyledSwiper = styled(Swiper)`
   padding-top: 120px;
-  padding-bottom: 30px;
   position: relative;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 30px;
+  .swiper-pagination-bullet {
+    background: rgba(66, 86, 122, 0.4);
+  }
   @media (max-width: 1023px) {
     padding-top: 100px;
   }
 
   @media (max-width: 767px) {
     padding-top: 60px;
-  }
-`;
-
-const StyledSwiper = styled(Swiper)`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  .swiper-pagination-bullet {
-    background: rgba(66, 86, 122, 0.4);
-  }
-  @media (max-width: 767px) {
-    .swiper-wrapper {
-      height: auto;
+    .swiper-pagination {
+      bottom: 20px;
     }
   }
 `;
@@ -51,7 +44,7 @@ const Slider = ({ data, isMobile }: SliderProps) => {
   };
 
   return (
-    <SliderEl>
+    <>
       <StyledSwiper
         id="slider"
         ref={swiperRef}
@@ -91,7 +84,7 @@ const Slider = ({ data, isMobile }: SliderProps) => {
           />
         </span>
       </StyledSwiper>
-    </SliderEl>
+    </>
   );
 };
 

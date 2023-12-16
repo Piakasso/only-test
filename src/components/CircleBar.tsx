@@ -147,15 +147,14 @@ const CircleBar: React.FC<CircleBarProps> = ({
       >
         {index + 1}
         {activeIndex === index ? (
-          <TitleEl>{data[index].category}</TitleEl>
+          <TitleEl>{data[index].category.toUpperCase()}</TitleEl>
         ) : null}
       </Dot>
     );
   });
-
   return (
     <>
-      {isMobile || (
+      {!isMobile && (
         <>
           <Circle ref={circleRef}>{points}</Circle>
         </>

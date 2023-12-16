@@ -6,14 +6,13 @@ import { data } from "./assets/data";
 
 const AppEl = styled.div`
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* overflow-y: scroll; */
 `;
 const Wrapper = styled.div`
   position: relative;
   max-width: 1440px;
-  flex-grow: 1;
-  height: 100%;
+
+  min-height: 100vh;
   margin: 0 auto;
   border-left: var(--primary-transparent) solid 1px;
   border-right: var(--primary-transparent) solid 1px;

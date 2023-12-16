@@ -19,7 +19,7 @@ const NavigationEl = styled.div`
   @media (max-width: 767px) {
     padding-left: 0;
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
   }
 `;
 

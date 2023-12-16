@@ -65,8 +65,8 @@ const FactsSlider: React.FC<FactsSliderProps> = ({ facts, isMobile }) => {
       <StyledSwiper
         id="factSlider"
         modules={[Navigation, FreeMode]}
-        spaceBetween={isMobile ? 25 : 80}
-        slidesPerView={isMobile ? 1.5 : 3}
+        spaceBetween={isSmall ? 20 : 80}
+        slidesPerView={isSmall ? 1.5 : 3}
         freeMode={true}
         navigation={{
           nextEl: ".leftbutton",
