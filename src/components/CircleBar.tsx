@@ -6,7 +6,7 @@ import { CircleBarProps } from "../types";
 
 const Circle = styled.div`
   position: absolute;
-  top: 5%;
+  top: 1dvh;
   left: 50%;
   transform: translateX(-50%);
   width: 540px;
