@@ -1,6 +1,6 @@
-# Countries Material UI
+# Only test task 
 
-A Single Page Application that shows information about countries. Displays basic information about countries. contains information about more than 200 countries
+A Single page application with 2 sliders and interactive circle
 
 ## Installation
 
